@@ -22,8 +22,8 @@
     gap: 20px;
 }
 
-.buttons-options button {
-    padding: 5px 10px;
+.buttons-options button, .display-timer button {
+    padding: 5px 15px;
     border-radius: 15px;
     border: none;
     font-size: 20px;
@@ -31,8 +31,21 @@
     cursor: pointer;
 }
 
-.buttons-options button.active {
+.buttons-options button.active, .display-timer button.active {
     background-color: black;
     color: white;
     font-weight: bold;
+}
+
+.display-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.display-timer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
